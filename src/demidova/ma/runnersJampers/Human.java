@@ -1,4 +1,6 @@
-package demidova.ma;
+package demidova.ma.runnersJampers;
+
+import demidova.ma.obstracle.Obstacle;
 
 public class Human implements RunnerAndJumper {
     private int maxLengthToRun;

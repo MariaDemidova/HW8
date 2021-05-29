@@ -1,5 +1,13 @@
 package demidova.ma;
 
+import demidova.ma.obstracle.Obstacle;
+import demidova.ma.obstracle.Track;
+import demidova.ma.obstracle.Wall;
+import demidova.ma.runnersJampers.Cat;
+import demidova.ma.runnersJampers.Human;
+import demidova.ma.runnersJampers.Robot;
+import demidova.ma.runnersJampers.RunnerAndJumper;
+
 public class Main {
 
     public static void main(String[] args) {

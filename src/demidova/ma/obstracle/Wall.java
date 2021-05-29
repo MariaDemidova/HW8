@@ -1,4 +1,4 @@
-package demidova.ma;
+package demidova.ma.obstracle;
 
 public class Wall extends Obstacle {
     private int wallHeight;
