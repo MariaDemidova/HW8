@@ -1,6 +1,6 @@
 package demidova.ma;
 
-public class Cat implements RunAndJump{
+public class Cat implements RunnerAndJumper {
     private int maxLengthToRun;
     private int maxHeightToJump;
     private String name;

@@ -1,6 +1,6 @@
 package demidova.ma;
 
-public class Robot implements RunAndJump{
+public class Robot implements RunnerAndJumper {
     private int maxLengthToRun;
     private int maxHeightToJump;
     private String name;
