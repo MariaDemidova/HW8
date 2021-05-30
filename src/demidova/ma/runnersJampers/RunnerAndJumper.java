@@ -1,6 +1,6 @@
 package demidova.ma.runnersJampers;
 
-import demidova.ma.obstracle.Obstacle;
+import demidova.ma.race.Obstacle;
 
 public interface RunnerAndJumper {
     void run(Obstacle track);

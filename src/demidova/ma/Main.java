@@ -1,8 +1,7 @@
 package demidova.ma;
-
-import demidova.ma.obstracle.Obstacle;
-import demidova.ma.obstracle.Track;
-import demidova.ma.obstracle.Wall;
+import demidova.ma.race.Obstacle;
+import demidova.ma.race.Track;
+import demidova.ma.race.Wall;
 import demidova.ma.runnersJampers.Cat;
 import demidova.ma.runnersJampers.Human;
 import demidova.ma.runnersJampers.Robot;
