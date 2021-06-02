@@ -32,6 +32,6 @@ public class Cat implements RunnerAndJumper {
 
     @Override
     public void jump(Obstacle wall) {
-        System.out.printf("Кот %s прыгаетдистанцию через стену %d метров...", name, wall.getValue());
+        System.out.printf("Кот %s прыгает через стену %d метров...", name, wall.getValue());
     }
 }

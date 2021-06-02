@@ -1,4 +1,5 @@
 package demidova;
+
 import demidova.race.Obstacle;
 import demidova.race.Track;
 import demidova.race.Wall;
@@ -22,12 +23,12 @@ public class Main {
             for (int j = 0; j < obstacle.length; j++) {
                 if (obstacle[j] instanceof Track) {
                     runnersAndJumpers[i].run(obstacle[j]);
-                    Judge.isSuccessRun(runnersAndJumpers[i],obstacle[j]);
+                    Judge.sayResult(runnersAndJumpers[i], obstacle[j]);
                 }
 
                 if (obstacle[j] instanceof Wall) {
                     runnersAndJumpers[i].jump(obstacle[j]);
-                    Judge.isSuccessJump(runnersAndJumpers[i],obstacle[j]);
+                    Judge.sayResult(runnersAndJumpers[i], obstacle[j]);
                 }
             }
             System.out.println();

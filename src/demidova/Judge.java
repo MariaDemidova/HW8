@@ -1,18 +1,21 @@
 package demidova;
 
 import demidova.race.Obstacle;
+import demidova.race.Track;
+import demidova.race.Wall;
 import demidova.runnersJampers.RunnerAndJumper;
 
 public class Judge {
-    public static void isSuccessRun(RunnerAndJumper runner, Obstacle track) {
-        if(track.getValue() < runner.getMaxLengthToRun()) System.out.printf("%s успешно пробежал дистанцию.\n", runner.getName());
-        else System.out.printf("%s не смог пробежать дистанцию.\n", runner.getName());
+
+    public static void sayResult(RunnerAndJumper runner, Obstacle track) {
+        if(isSuccess(runner, track)) System.out.printf("%s успешно преодолел препятствие.\n", runner.getName());
+        else System.out.printf("%s не осилил препятствие.\n", runner.getName());
     }
 
-    public static void isSuccessJump(RunnerAndJumper jumper, Obstacle wall) {
-        if(wall.getValue() < jumper.getMaxHeightToJump()) System.out.printf("%s успешно перепрыгнул стену.\n", jumper.getName());
-        else System.out.printf("%s не смог перепрыгнуть стену.\n", jumper.getName());
+    private static boolean isSuccess(RunnerAndJumper runnerAndJumper, Obstacle obstacle) {
+        if (obstacle instanceof Wall && obstacle.getValue() < runnerAndJumper.getMaxHeightToJump())
+            return true;
+        else if(obstacle instanceof Track && obstacle.getValue() < runnerAndJumper.getMaxLengthToRun()) return true;
+        else return false;
     }
-
-
 }
