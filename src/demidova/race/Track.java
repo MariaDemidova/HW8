@@ -1,4 +1,4 @@
-package demidova.ma.race;
+package demidova.race;
 
 public class Track extends Obstacle {
     private int trackLength;

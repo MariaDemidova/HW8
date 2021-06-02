@@ -1,4 +1,4 @@
-package demidova.ma.race;
+package demidova.race;
 
 public class Wall extends Obstacle {
     private int wallHeight;
