@@ -27,11 +27,11 @@ public class Robot implements RunnerAndJumper {
 
     @Override
     public void run(Obstacle track) {
-        System.out.printf("Робот %s бежит...", name);
+        System.out.printf("Робот %s бежит дистанцию %d метров...", name, track.getValue());
     }
 
     @Override
     public void jump(Obstacle wall) {
-        System.out.printf("Робот %s прыгает...", name);
+        System.out.printf("Робот %s прыгает через стену %d метров...", name, wall.getValue());
     }
 }

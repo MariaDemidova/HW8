@@ -27,11 +27,11 @@ public class Cat implements RunnerAndJumper {
 
     @Override
     public void run(Obstacle track) {
-        System.out.printf("Кот %s бежит...", name);
+        System.out.printf("Кот %s бежит дистанцию %d метров...", name, track.getValue());
     }
 
     @Override
     public void jump(Obstacle wall) {
-        System.out.printf("Кот %s прыгает...", name);
+        System.out.printf("Кот %s прыгаетдистанцию через стену %d метров...", name, wall.getValue());
     }
 }
